@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="card">
+        <div class="card_text">Enter code :</div>
+        <div class="card_numbers">
+            <input class="code_number" id="one" type="number">
+            <input class="code_number" id="two" type="number">
+            <input class="code_number" id="three" type="number">
+            <div class="middle_card">-</div>
+            <input class="code_number" id="four" type="number">
+            <input class="code_number" id="five" type="number">
+            <input class="code_number" id="six" type="number">
+        </div>
+        <div class="btn">
+            <button id="submit-btn">Submit</button>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
+<!--
+    Build a verification code form.
+    Focusing on any input should bring the focus to the first empty input.
+    Entering a value should switch the focus to the next input.
+    Deleting a value should delete the last filled value.
+    Submitting the form should alert the submitted code.
+-->

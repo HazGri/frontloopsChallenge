@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress navigation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="roots">
+      <div class="container-numbers">
+        <div class="container-numbers__one numbers">1</div>
+        <div class="container-numbers__two numbers">2</div>
+        <div class="container-numbers__three numbers">3</div>
+      </div>
+      <div class="container-title-selection">
+        <div class="container-title-selection__one titles-selection">
+          Choose title
+        </div>
+        <div class="container-title-selection__two titles-selection">
+          Choose description
+        </div>
+        <div class="container-title-selection__three titles-selection">
+          Confirm data
+        </div>
+      </div>
+      <div class="container-content">
+        <div class="container-content__text">Chose title content</div>
+        <button
+          class="container-content__submit-title-btn container-content__btn"
+        >
+          Submit title
+        </button>
+        <button class="container-content__back-btn container-content__btn">
+          Back
+        </button>
+        <button
+          class="container-content__submit-description-btn container-content__btn"
+        >
+          Submit description
+        </button>
+        <button class="container-content__go-back-btn container-content__btn">
+          No, go back
+        </button>
+        <button class="container-content__go-ahead-btn container-content__btn">
+          Yes, go ahead
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+<!--
+    Create a progress navigation with previous/next buttons on each step and an overview of all steps.
+    Clicking next button on last step should bring the final screen
+    Steps in overview should be also clickable and change current step to the one click,
+    however you shouldn't be able to skip the next step, so if you're at 1 step - you can't go directly to 3.
+-->

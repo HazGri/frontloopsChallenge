@@ -1,0 +1,102 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(143, 87, 195);
+}
+
+.roots {
+  background-color: #fff;
+  max-width: 650px;
+  height: 100px;
+  margin: 100px auto;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+}
+
+/* ceci est le bloc des numéros */
+.container-numbers {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.container-numbers__one {
+  color: #fff;
+  background-color: rgb(95, 158, 235);
+}
+.container-numbers__two, .container-numbers__three {
+  background-color: rgb(241, 241, 241);
+}
+
+.numbers {
+  margin-bottom: 5px;
+  border-radius: 999px;
+  width: 20px;
+  height: 19px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ceci est le bloc des titres de selection */
+.titles-selection {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.container-title-selection {
+  margin-right: 50px;
+}
+.container-title-selection__two, .container-title-selection__three {
+  opacity: 0.5;
+}
+.container-title-selection__two:hover, .container-title-selection__three:hover {
+  opacity: 1;
+}
+
+/* ceci est le bloc du contenu des différentes pages */
+.container-content {
+  line-height: 40px;
+}
+.container-content__btn {
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  background-color: rgb(219, 215, 215);
+  display: none;
+  padding: 10px;
+}
+.container-content__btn:active {
+  transform: translateY(1px);
+}
+.container-content__btn:hover {
+  opacity: 1;
+}
+.container-content__submit-title-btn {
+  display: block;
+}
+.container-content__back-btn {
+  width: 50px;
+}
+
+/* ce sont les classes qu'on activera avec le JS */
+.text-active {
+  opacity: 1;
+}
+
+.number-active {
+  background-color: rgb(95, 158, 235);
+  color: #fff;
+}
+
+.hide-content {
+  display: none;
+}
+
+.show-content {
+  display: inline-block;
+}/*# sourceMappingURL=style.css.map */

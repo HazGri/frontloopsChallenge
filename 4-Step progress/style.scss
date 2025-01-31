@@ -1,0 +1,112 @@
+$color : #fff;
+@mixin display($flex,$align-items) {
+  display: $flex;
+  align-items: $align-items;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(143, 87, 195);
+}
+
+.roots {
+  background-color: $color;
+  max-width: 650px;
+  height: 100px;
+  margin: 100px auto;
+  border-radius: 6px;
+  @include display(flex,center);
+}
+/* ceci est le bloc des numéros */
+
+.container-numbers {
+  margin-left: 15px;
+  margin-right: 15px;
+
+  &__one {
+    color: $color;
+    background-color: rgb(95, 158, 235);
+  }
+  &__two,
+  &__three {
+    background-color: rgb(241, 241, 241);
+  }
+}
+.numbers {
+  margin-bottom: 5px;
+  border-radius: 999px;
+  width: 20px;
+  height: 19px;
+  display: flex;
+  justify-content: center;
+}
+/* ceci est le bloc des titres de selection */
+
+.titles-selection {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.container-title-selection {
+  margin-right: 50px;
+
+  &__two,
+  &__three {
+    opacity: 0.5;
+  }
+  &__two:hover,
+  &__three:hover {
+    opacity: 1;
+  }
+}
+/* ceci est le bloc du contenu des différentes pages */
+
+.container-content {
+  line-height: 40px;
+
+  &__btn {
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgb(219, 215, 215);
+    display: none;
+    padding: 10px;
+  }
+  &__btn:active {
+    transform: translateY(1px);
+  }
+  &__btn:hover {
+    opacity: 1;
+  }
+
+  &__submit-title-btn {
+    display: block;
+  }
+  &__back-btn {
+    width: 50px;
+  }
+}
+
+/* ce sont les classes qu'on activera avec le JS */
+
+.text-active {
+  opacity: 1;
+}
+
+.number-active {
+  background-color: rgb(95, 158, 235);
+  color: $color;
+}
+
+.hide-content {
+  display: none;
+}
+
+.show-content {
+  display: inline-block;
+}

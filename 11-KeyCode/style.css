@@ -1,0 +1,69 @@
+body {
+    height: 100vh;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+#card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color:#fafafa;
+    padding: 50px;
+    width: fit-content;
+    height: 100px;
+    border-radius: 6px;
+}
+
+.code_number {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    border: solid 2px rgb(203, 203, 203);
+    outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#four {
+    margin-left: 10px;
+}
+#three{
+    margin-right: 10px;
+}
+#one, #two, #four, #five{
+    border-right: none;
+}
+.middle_card {
+    font-size: 50px;
+}
+
+.card_numbers {
+  display: flex;
+}
+.btn {
+    margin-top: 30px;
+}
+.card_text {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#submit-btn {
+    outline: none;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+#btn:active {
+    transform: translateY(1px);
+}

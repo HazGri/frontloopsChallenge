@@ -1,0 +1,70 @@
+*, a::after,a::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(90, 148, 211);
+}
+.container {
+    margin: 100px auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    max-width: 450px;
+    height: 100px;
+    background-color: white;
+    border-radius: 6px;
+    padding-left: 20px;
+}
+.btn {
+    height: 50px;
+    width: 120px;
+    cursor: pointer;
+    border: none;
+    border: solid 2px rgb(94, 161, 255);
+    background-color:#fff;
+}
+
+/* .btn:hover {
+    background-color: rgba(226, 216, 216, 0.492);
+} */
+.btn-1 {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-right: none;
+}
+.btn-2 {
+    border-right: none;
+}
+.btn-3{
+border-top-right-radius: 6px;
+border-bottom-right-radius: 6px;
+}
+
+.selection {
+    width: 400px;
+    height: 35px;
+    border: solid 2px rgb(94, 161, 255);
+    border-radius: 6px;
+    outline: none;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        display: none;
+    }
+    .selection {
+        display: flex;
+    }
+  }
+  
+.activate {
+    color: white;
+    background-color: rgb(0, 149, 255);
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.38);
+    -moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.38);
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.38);
+}

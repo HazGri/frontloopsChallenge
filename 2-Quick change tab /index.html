@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porgress navigation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form class="myForm" action="" method="get">
+        <input
+          class="index-form"
+          type="number"
+          required
+          id="index-value"
+          placeholder="Enter tab index"
+        />
+        <button class="form-button" type="submit">Change tab</button>
+      </form>
+      <div class="index-name">
+        <span class="button-content positive">POSITIVE</span>
+        <span class="button-content negative">NEGATIVE</span>
+        <span class="button-content neutral">NEUTRAL</span>
+      </div>
+      <span class="index-description">Positive content</span>
+    </div>
+    <script src="script (3).js"></script>
+  </body>
+</html>
+<!--
+        Create Tabs component, that has several tab buttons. Each button toggles active tab content.
+        Add a text input with a button. User can enter any tab index in the input and toggle it by clicking the button.
+        Indexes in this task are not the same as they are used in JS, so by entering 1 - first tab should be shown, not 0.
+        If invalid index is entered - browser must show an alert.
+    -->
